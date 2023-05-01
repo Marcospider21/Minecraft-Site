@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.background-buy,
+.background-games,
+.background-social,
+.background-footer,
+.background-contact {
+    max-width: 1920px;
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@font-face {
+    font-family: 'minecraft';
+    src: url(fonts/MinecraftTen-VGORe.ttf) format(truetype);
+}
+
+body {
+    background-color: #171615;
+    background-size: 300px 300px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+header,
+input,
+button,
+section,
+p {
+    font-family: 'minecraft';
+    font-weight: normal;
+}
+
+header {
+    background-color: #171615;
+    padding: 16px;
+}
+
+header img {
+    height: 50px;
+}
+
+header nav li {
+    display: inline;
+    font-size: 24px;
+}
+
+header nav li a,
+#buy a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header button {
+    margin-right: 16px;
+    background-color: rgb(51, 113, 33);
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: rgb(28, 65, 18);
+}
+
+#info {
+    margin-left: 16px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    color: #fff;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 4px;
+}
+
+.background-buy {
+    background-image: url(images/minecraft2.png);
+    background-size: 1980px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 600px;
+}
+
+#buy .container {
+    display: block;
+}
+
+#buy h2,
+#buy p,
+#buy button {
+    display: block;
+    width: 40%;
+    margin-left: 32px;
+}
+
+#buy button:hover {
+    background-color: rgb(28, 65, 18);
+}
+
+#buy h2 {
+    font-size: 40px;
+    -webkit-text-stroke: 1px black;
+    color: rgb(255, 255, 255);
+    padding: 40px 0;
+}
+
+#buy #slogan {
+    font-size: 50px;
+    -webkit-text-stroke: 1px black;
+    margin-top: 16px;
+}
+
+#buy p {
+    font-size: 20px;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
+}
+
+#buy button {
+    font-size: 32px;
+    background-color: rgb(51, 113, 33);
+    color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+    border: none;
+    border-style: double;
+    cursor: pointer;
+    margin-top: 32px;
+}
+
+.background-games {
+    background-image: url(images/stone.jpg);
+    background-size: auto 300px;
+    background-position: center;
+    background-attachment: scroll;
+    height: 700px;
+}
+
+#games .container {
+    display: block;
+}
+
+.games {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#games h2 {
+    text-align: center;
+    color: black;
+}
+
+#games h3 {
+    text-align: center;
+    font-size: 32px;
+    color: black;
+}
+
+#games h2 {
+    margin-bottom: 64px;
+}
+
+#games a img {
+    transition: transform 0.5s ease;
+}
+
+#games a:hover img {
+    transform: scale(1.2);
+}
+
+.background-contact {
+    background-color: #171615;
+    background-size: 1920px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 250px;
+}
+
+#contact .container {
+    justify-content: center;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+}
+
+#contact form input,
+#contact form textarea,
+#contact form button {
+    width: 200px;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+form button {
+    background-color:rgb(51, 113, 33);
+    color:#ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(28, 65, 18);
+}
+
+input:focus, textarea:focus {
+    outline-color: rgb(51, 113, 33);
+    outline-width: 20px;
+}
+
+#contact textarea {
+    font-family: 'minecraft';
+}
+
+.background-social {
+    background-color: #171615;
+    background-size: 1920px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 150px;
+}
+
+#social-media h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+#social-media .container {
+    display: block;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 300px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links img {
+    height: 50px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links a img {
+    filter: grayscale(100%);
+}
+
+.social-links a:hover img {
+    filter: none;
+}
+
+.background-footer {
+    background-color: #302e2c;
+    background-size: 1920px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 20px;
+}
